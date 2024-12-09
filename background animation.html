@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bckground Animation</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        section{
+            position: absolute;
+            height: 100vh;
+            width: 100%;
+        }
+        .container{
+            position: absolute;
+            height: 100%;
+            width: 100%;
+            background-color: aqua;
+        }
+        span{
+           height: 80px;
+           width: 80px;
+           background-color: white;
+           animation: animate 2s linear infinite;
+        }
+        span:nth-child(2n-1){
+            background: transparent;
+            border: 6px solid white;
+            animation-delay: 2s;
+        }
+        span:nth-child(1){
+            position: absolute;
+            top: 10%;
+            left: 10%;
+            animation-delay: 0.1s;
+        }
+        span:nth-child(2){
+            position: absolute;
+            top: 20%;
+            left: 30%;
+            animation-delay: 0.8s;
+        }
+        span:nth-child(3){
+            position: absolute;
+            top: 40%;
+            left: 65%;
+            animation-delay: 0.7s;
+        }
+        span:nth-child(4){
+            position: absolute;
+            top: 70%;
+            left: 30%;
+            animation-delay: 1.2s;
+        }
+        span:nth-child(5){
+            position: absolute;
+            top: 10%;
+            left: 70%;
+            animation-delay: 1.2s;
+        }
+        span:nth-child(6){
+            position: absolute;
+            top: 10%;
+            left: 50%;
+            animation-delay: 0.2s;
+        }
+        span:nth-child(7){
+            position: absolute;
+            top: 20%;
+            left: 85%;
+            animation-delay: 0.1s;
+        }
+        span:nth-child(8){
+            position: absolute;
+            top: 70%;
+            left: 85%;
+            animation-delay: 0.8s;
+        }
+        span:nth-child(9){
+            position: absolute;
+            top: 80%;
+            left: 65%;
+            animation-delay: 0.7s;
+        }
+        span:nth-child(10){
+            position: absolute;
+            top: 50%;
+            left: 45%;
+            animation-delay: 1.5s;
+        }
+        span:nth-child(11){
+            position: absolute;
+            top: 40%;
+            left: 5%;
+            animation-delay: 0.2s;
+        }
+        span:nth-child(12){
+            position: absolute;
+            top: 75%;
+            animation-delay: 0.5s;
+            left: 8%;
+        }
+        @keyframes animate{
+            0%{
+                transform: scale(0) translateY(0) rotate(0);
+                opacity: 1;
+            }
+            100%{
+                transform: scale(1) translateY(-100px) rotate(360deg);
+                opacity: 0;
+            }
+        }
+    </style>
+</head>
+<body>
+<section>
+    <div class="container">
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
+</section>
+</body>
+</html>
